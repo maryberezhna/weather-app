@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather app</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="row">
+                <div class="col-7 m-4 citybox">
+                    <p class="city fs-2" id="city">Kyiv <strong>l</strong></p>
+                    <hr />
+                    <div class="col fst-italic bold ">
+                        <span>Temperature is:
+                            <p class="temperatura fst-italic" id="temperatura">14</p>
+                            <a class="celcius active" id="celcius" href="#">°C|</a>
+                            <a class="farenheit" id="farenheit" href="#">°F</a>
+                            <span id="temperatura-description">, clear sky</span>
+                        </span>
+                    </div>
+                    <div class="col-6">
+                        <span>Humudity is:
+                            <p class="fst-italic" id="humudity-percent">80%</p>
+                        </span>
+                        <span>Wind:
+                            <p class="fst-italic" id="wind-speed">1.54km/h</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="col mt-4 weather-box">
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" id="weather-icon"></img>
+                    <p class="currentTime"></p>
+                </div>
+
+            </div>
+            <div class="row m-2">
+                <div class="col">
+                    <form class="m-1" id="form" role="search">
+                        <input class="form-control" id="input" type="search" placeholder="Enter a city name"
+                            aria-label="Search" />
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-info search-button m-1" type="submit"
+                        id="submit-button">Search</button>
+                    <button type="button" class="btn btn-outline-secondary search-button m-1" type="button"
+                        id="button">Сurrent
+                        Location</button>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <div class="row mx-auto" style="width:600px;">
+                    <div class="col m-1 copyright-box">
+                        <p class="text-left copyright"><a class="copyright-link" href="https://openweathermap.org/"
+                                target="_blank" rel="noopener noreferrer">Open-source
+                                code</a> by Mariia Berezhna</p>
+                    </div>
+                    <script src="src/index.js"></script>
+</body>
+
+</html>
