@@ -3,6 +3,7 @@ It is weather app from SheCodes learning course
 
 Technologies used: Bootstrap, CSS, JS, API
 
+<br>
 Weather API that used in the project is  https://openweathermap.org/.
 
 <br>
