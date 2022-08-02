@@ -1,0 +1,154 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  padding: 30px 20px;
+  background: linear-gradient(#3f87a6, #f69d3c);
+  height: 650px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 48px;
+}
+
+h1 h2,
+h3 {
+  color: #3115a3;
+}
+
+.logo {
+  display: block;
+  margin: 30px auto;
+  width: 150px;
+}
+
+.box {
+  border: 1px solid lightblue;
+  background-color: white;
+  box-shadow: 14px 12px rgb(36, 122, 175), -1em 0 0.4em olive;
+  max-width: 600px;
+  margin: 60px auto;
+}
+
+.currentTime {
+  text-align: center;
+  color: orange;
+  font-style: italic;
+}
+
+.copyright {
+  font-size: 10px;
+}
+
+.copyright-link {
+  color: black !important;
+}
+
+.farenheit,
+.celcius {
+  color: orange;
+  text-decoration: none !important;
+  cursor: default;
+}
+
+.active,
+.celcius:hover,
+.farenheit:hover {
+  color: black;
+  text-decoration: none;
+  cursor: default;
+}
+
+.city strong {
+  color: transparent;
+}
+
+#temperatura,
+#celcius,
+#farenheit,
+#temperatura-description {
+  font-weight: bold;
+}
+
+.loader {
+  position: absolute;
+  z-index: 1;
+  margin-left: 30px;
+  margin-top: 5px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+p,
+i {
+  display: inline;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+p.copyright {
+  font-weight: normal;
+  font-size: 10px;
+}
+
+.weather-box {
+  text-align: center;
+}
+
+#weather-icon {
+  height: 50px;
+}
