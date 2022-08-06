@@ -2,6 +2,7 @@
 It is weather app from SheCodes learning course
 
 Technologies used: Bootstrap, CSS, JS, API, Hosting
+<br>
 Features: Forecast(based on API), converting Celsius to Fahrenheit and back, geolocation request, city search, the date shown.
 
 <br>
