@@ -13,5 +13,5 @@ Weather API that used in the project is  https://openweathermap.org/.
 <br>
 Site deployed thanks to https://www.netlify.com/
 <br>
-*Site link: 
-https://vermillion-chimera-f64aee.netlify.app/*
+<b>Site link:</b>
+https://vermillion-chimera-f64aee.netlify.app/
